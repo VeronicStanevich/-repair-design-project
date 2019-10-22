@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>HTML-CSS-2</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
 <header class="header">
@@ -66,7 +65,19 @@
                 </div>
 
             </div>
-            <div class=""></div>
+            <div class="arrows_points">
+                <div class="left_arrow">
+                    <div class="left_arrow_block"><img src=<%= require('./asserts/arrow_left.png') %>/></div>
+                    <div class="left_vector"><img src=<%= require('./asserts/Vector.png') %> /></div>
+                </div>
+                <div><img src=<%= require('./asserts/point_1.png') %> /></div>
+                <div><img src=<%= require('./asserts/point_2.png') %> /></div>
+                <div><img src=<%= require('./asserts/point_2.png') %> /></div>
+                <div class="right_arrow">
+                    <div class="right_arrow_block"><img src=<%= require('./asserts/arrow_right.png') %> /></div>
+                    <div class="right_vector"><img src=<%= require('./asserts/Vector.png') %> /></div>
+                </div>
+            </div>
         </div>
         <div class="gallery_buttons">
             <div class="secondary_buttons">
@@ -75,20 +86,21 @@
                 <button class="secondary_buttons_item">Rostov-on-Don Patriotic</button>
             </div>
             <div class="gallery">
-                <div><img src="asserts/image 2.1.png" class="image2.1"></div>
+                <div><img src=<%= require('./asserts/image_2_1.png')%> class="image2.1"></div>
                 <div class="button_right">
-                    <div class="ellipse"><img src="asserts/Ellipse.png"></div>
-                    <div class="arrow"><img src="asserts/arrow.png"></div>
+                    <div class="ellipse"><img src=<%= require('./asserts/Ellipse.png') %> /></div>
+                    <div class="arrow"><img src=<%= require('./asserts/arrow.png') %> /></div>
                 </div>
-                <div><img src="asserts/image2.1.1.png" class="image2.1.1"></div>
+                <div><img class="image2.1.1" src=<%= require('./asserts/image2.1.1.png') %> /></div>
 
             </div>
         </div>
     </div>
 </div>
+
 <div class="control">
     <div class="online_control">online control</div>
-    <div class=group""><img src="asserts/Group.png"></div>
+    <div class="Group"><img src=<%= require('./asserts/Group.png') %> /></div>
 </div>
 </body>
 </html>
